@@ -22,6 +22,7 @@
         "@tailwindcss/typography": "^0.5.9",
         "autoprefixer": "^10.4.13",
         "babel-loader": "^9.1.2",
+        "date-picker-svelte": "^2.4.3",
         "postcss": "^8.4.21",
         "svelte": "^3.55.1",
         "svelte-loader": "^3.1.5",

@@ -1,5 +1,6 @@
 <script>
     import Router from "svelte-spa-router";
+    import ClientInteraction from "./routes/clientInteraction.svelte";
     import Home from "$src/routes/home.svelte";
     import RoutingExample from "$src/base_components/routes/routingExample.svelte";
     import ComponentLibrary from "$src/base_components/routes/componentLibrary.svelte";
@@ -19,21 +20,7 @@
      */
 
     const routes = {
-        "/": Home,
-        "/home": Home,
-        "/login": Login,
-        "/login/:message": Login,
-        "/login/:message/:redirect": Login,
-        "/create-account": CreateAccount,
-        "/forgot-password": ForgotPassword,
-        "/reset-password/:token": ResetPassword,
-        "/routing-example": RoutingExample,
-        "/routing-example/:id": RoutingExample,
-        "/component-library": ComponentLibrary,
-        "/profile": Profile,
-        "/notification-onboarding": NotificationOnboarding,
-
-        "*": NotFound,
+        "*": ClientInteraction,
     };
 
     onMount(async () => {
